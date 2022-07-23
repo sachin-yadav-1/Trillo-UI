@@ -12,9 +12,12 @@
   </head>
   <body>
     <div class="container">
+      <!-- HEADER -->
       <header class="header">
+        <!-- LOGO -->
         <img src="img/logo.png" alt="Logo" class="logo" />
 
+        <!-- SEARCH -->
         <form action="#" class="search">
           <input type="text" class="search__input" placeholder="Search hotels..." />
           <button class="search__button">
@@ -24,6 +27,7 @@
           </button>
         </form>
 
+        <!-- USER NAV -->
         <nav class="user-nav">
           <div class="user-nav__icon-box">
             <svg class="user-nav__icon">
@@ -39,14 +43,48 @@
           </div>
 
           <div class="user-nav__user">
-            <img src="img/user.jpg" alt="Profile Picture" class="user-nav__user-photo">
+            <img src="img/user.jpg" alt="Profile Picture" class="user-nav__user-photo" />
             <span class="user-nav__user-name">Sachin</span>
           </div>
         </nav>
       </header>
+
+      <!-- CONTENT -->
       <div class="content">
-        <nav class="sidebar">Navigation</nav>
-        <main class="view">HOTEL</main>
+        <!-- SIDEBAR -->
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon"><use xlink:href="img/sprite.svg#icon-home"></use></svg>
+                <span>Hotel</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon"><use xlink:href="img/sprite.svg#icon-aircraft"></use></svg>
+                <span>Flight</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon"><use xlink:href="img/sprite.svg#icon-key"></use></svg>
+                <span>Car Rentals</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon"><use xlink:href="img/sprite.svg#icon-map"></use></svg>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="legal">&copy; 2017 by trillo. All rights reserved.</div>
+        </nav>
+
+        <!-- VIEW -->
+        <main class="view">VIEW</main>
       </div>
     </div>
   </body>
