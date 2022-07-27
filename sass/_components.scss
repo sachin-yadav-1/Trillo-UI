@@ -115,8 +115,17 @@
   font-size: 1.4rem;
   list-style: none;
 
+  @media only screen and (max-width: 56.25em) {
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     position: relative;
+
+    @media only screen and (max-width: 56.25em) {
+      flex: 1;
+    }
   }
 
   &__item::before {
@@ -153,6 +162,17 @@
 
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: 56.25em) {
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
+      padding: 1.5rem .5rem;
+
+    }
   }
 
   &__icon {
@@ -161,6 +181,10 @@
     margin-right: 2rem;
     fill: currentColor;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    margin: 0;
+  }
 }
 
 .legal {
@@ -168,6 +192,10 @@
   font-size: 1.2rem;
   text-align: center;
   padding: 2.5rem;
+
+  @media only screen and (max-width: 56.25em) {
+    display: none;
+  }
 }
 
 .gallery {
@@ -252,7 +280,7 @@
 
   & span {
     margin-left: 3px;
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
   &:hover {
@@ -305,6 +333,10 @@
     margin-right: auto;
   }
 
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -313,7 +345,7 @@
     border: 3px solid #fff;
 
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
   }
 }
@@ -324,6 +356,11 @@
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
+
+  @media only screen and (max-width: 56.25em) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 
   &__text {
     margin-bottom: 2rem;
@@ -351,7 +388,7 @@
     font-size: 1.1rem;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: .4rem;
+    margin-bottom: 0.4rem;
   }
 
   &__user-date {
